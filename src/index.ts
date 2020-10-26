@@ -1,16 +1,16 @@
 import { Client, Message } from "discord.js";
-import { API_TOKEN } from "./config";
+import * as config from "./config.json";
 
 const client = new Client();
 
-client.on("ready", () => {
+client.once("ready", () => {
   console.log("Client launched successfully");
 });
 
 client.on("message", (m: Message) => {
-  if (m.content === "!!help") {
+  if (m.content === `${config.prefix}help`) {
     m.channel.send("A faire par **pipierre80**");
   }
 });
 
-client.login(API_TOKEN);
+client.login(config.token);
