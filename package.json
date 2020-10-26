@@ -1,0 +1,26 @@
+{
+  "name": "angrysquirrels",
+  "version": "1.0.0",
+  "description": "\"Angry Squirrels\" est une preuve de concept de RPG textuel, utilisant uniquement l'outil de discussion Discord.",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "node .",
+    "compile": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/derentho/angrysquirrels.git"
+  },
+  "author": "Thomas 'derentho' Derencourt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/derentho/angrysquirrels/issues"
+  },
+  "homepage": "https://github.com/derentho/angrysquirrels#readme",
+  "devDependencies": {
+    "typescript": "^4.0.3"
+  },
+  "dependencies": {
+    "discord.js": "^12.4.1"
+  }
+}
