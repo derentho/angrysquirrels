@@ -13,7 +13,6 @@
  - Node.js `12.19.0 LTS`
  - TypeScript `4.0.3`
  - discord.js `12.4.1`
- - Docker `19.03.13`
 
 <br>
 
