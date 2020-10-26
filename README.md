@@ -13,10 +13,19 @@
  - Node.js `12.19.0 LTS`
  - TypeScript `4.0.3`
  - discord.js `12.4.1`
+ - Docker `19.03.13`
 
 <br>
 
 ## Cahier des charges
+
+L'objectif de ce projet est de créer un bot Discord. Chaque version ajoutera des fonctionnalitées plus ou moins importantes.
+
+Le préfixe utilisé par le bot discord sera `!!`.
+
+<br>
+
+### `v1` - Rabid Beast
 
 La version 1 (`v1`) de "Angry Squirrels" sera une simple prise en main, et répondra uniquement aux besoins suivants :
 
