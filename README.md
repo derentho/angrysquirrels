@@ -6,8 +6,6 @@
 
 > 2042\. L'explosion de la consommation a provoqué la chute de l'Humanité. Les seuls êtres vivants restants sont une race d'écureuils mutants, et quelques humains qui essayent tant bien que mal de survivre. Armé de votre meilleure batte de baseball, vous vous battez pour essayer de rendre à l'Humanité sa gloire passée...
 
-<br>
-
 ## Introduction
 
 "Angry Squirrels" est une **preuve de concept** de RPG textuel, utilisant uniquement l'outil de discussion Discord. L'objectif du projet est de construire itérativement une application complexe, d'une manière compréhensible par un néophite.
