@@ -1,5 +1,13 @@
 # Angry Squirrels
 
+<p align="center">
+  <img src="./angry_squirrel.png" />
+</p>
+
+> 2042\. L'explosion de la consommation a provoqué la chute de l'Humanité. Les seuls êtres vivants restants sont une race d'écureuils mutants, et quelques humains qui essayent tant bien que mal de survivre. Armé de votre meilleure batte de baseball, vous vous battez pour essayer de rendre à l'Humanité sa gloire passée...
+
+<br>
+
 ## Introduction
 
 "Angry Squirrels" est une **preuve de concept** de RPG textuel, utilisant uniquement l'outil de discussion Discord. L'objectif du projet est de construire itérativement une application complexe, d'une manière compréhensible par un néophite.
@@ -33,3 +41,9 @@ Version | Besoin
  `v1`   | Un utilisateur pourra lire le lore (`!!lore`).
  `v1`   | Un utilisateur pourra afficher les informations du bot (`!!help`).
  `v1`   | Un monstre pourra apparaître aléatoirement, le premier joueur à attaquer tuera automatiquement le monstre (`!!attack`).
+
+<br>
+
+## Versionning
+
+Ce projet suit la spécification de [Conventional Commits](https://www.conventionalcommits.org/fr/v1.0.0/).
