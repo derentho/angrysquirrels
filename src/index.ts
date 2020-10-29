@@ -9,8 +9,8 @@ client.once("ready", () => {
 
 client.on("message", (m: Message) => {
   if (m.content === `${config.prefix}help`) {
-    m.channel.send("A faire par **pipierre80**");
+    void m.channel.send("A faire par **pipierre80**");
   }
 });
 
-client.login(config.token);
+void client.login(config.token);
