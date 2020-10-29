@@ -37,7 +37,7 @@ Le préfixe utilisé par le bot discord sera `!!`.
 La version 1 (`v1`) de "Angry Squirrels" sera une simple prise en main, et répondra uniquement aux besoins suivants :
 
 Version | Besoin
- :----: | :----- |
+:-----: | :-----
  `v1`   | Un utilisateur pourra lire le lore (`!!lore`).
  `v1`   | Un utilisateur pourra afficher les informations du bot (`!!help`).
  `v1`   | Un monstre pourra apparaître aléatoirement, le premier joueur à attaquer tuera automatiquement le monstre (`!!attack`).
