@@ -44,6 +44,6 @@ Version | Besoin
 
 <br>
 
-## Versionning
+## Contribution
 
 Ce projet suit la spécification de [Conventional Commits](https://www.conventionalcommits.org/fr/v1.0.0/).
