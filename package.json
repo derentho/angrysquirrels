@@ -7,7 +7,8 @@
     "start": "node .",
     "compile": "tsc",
     "watch": "tsc --watch",
-    "lint": "eslint . --ext .ts"
+    "lint": "eslint . --ext .ts",
+    "full-install": "npm install && npm run compile"
   },
   "repository": {
     "type": "git",
