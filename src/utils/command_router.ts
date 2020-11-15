@@ -24,7 +24,7 @@ export default class CommandRouter {
       }
 
       const content = message.content.split(" ");
-      const command = content[0];
+      const command = content[0].substring(context.prefix.length);
       const args = content.slice(1);
 
       if (this.#commands.has(command)) {
