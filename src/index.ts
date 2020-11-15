@@ -1,8 +1,10 @@
 import { Client, Message } from "discord.js";
+import CommandRouter from "./utils/command_router";
 import Context from "./utils/context";
 
 const client = new Client();
 const context = Context.getInstance();
+const router = new CommandRouter(client);
 
 client.once("ready", () => {
   console.log("Client launched successfully");

@@ -7,6 +7,15 @@ import { config } from "dotenv";
  */
 export default class Context {
 
+    // --- Constantes ---
+
+  /** Le préfixe par défaut des commandes Discord. */
+  private static readonly DEFAULT_PREFIX = "!!";
+
+  /** Le token par défaut utilisé par l'API Discord. */
+  private static readonly DEFAULT_TOKEN = "";
+
+
     // --- Static ---
 
   private static instance?: Context;
@@ -34,17 +43,17 @@ export default class Context {
     // --- Accesseurs ---
 
   /**
-   * Le token utilisé par l'API Discord.
+   * Le préfixe des commandes Discord.
    */
   get prefix(): string {
-    return process.env.PREFIX ?? "";
+    return process.env.PREFIX ?? Context.DEFAULT_PREFIX;
   }
 
   /**
-   * Le préfixe des commandes Discord.
+   * Le token utilisé par l'API Discord.
    */
   get token(): string {
-    return process.env.TOKEN ?? "";
+    return process.env.TOKEN ?? Context.DEFAULT_TOKEN;
   }
 
 }
