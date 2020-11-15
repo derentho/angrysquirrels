@@ -29,9 +29,9 @@ export default class Lore extends Command {
       + "d'écureuils mutants, et quelques humains qui essayent tant bien que "
       + "mal de survivre. Armé de votre meilleure batte de baseball, vous vous "
       + "battez pour essayer de rendre à l'Humanité sa gloire passée...";
+
     const embed = new MessageEmbed()
       .addField(this.description, lore);
-
     await message.channel.send(embed);
   }
 

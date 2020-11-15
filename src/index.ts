@@ -10,8 +10,7 @@ client.once("ready", () => {
   console.log("Client launched successfully");
 });
 
-const router = new CommandRouter(client);
-router.register(
+new CommandRouter(client).register(
   new Lore()
 );
 
