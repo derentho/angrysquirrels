@@ -1,5 +1,6 @@
 import { Client, Message } from "discord.js";
 import Command from "./command";
+import Help from "./commands/help";
 import Unrecognized from "./commands/unrecognized";
 import Context from "./context";
 
@@ -17,6 +18,7 @@ export default class CommandRouter {
 
   constructor(client: Client) {
     this.#commands = new Map<string, Command>();
+    this.#commands.set("help", new Help(this.#commands));
     const context = Context.getInstance();
 
     client.on("message", (message: Message) => {
