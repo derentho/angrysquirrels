@@ -5,7 +5,7 @@ import Command from "../utils/command";
 /**
  * Une commande pour attaquer un monstre.
  */
-export default class Attack extends Command {
+export default class Attack implements Command {
 
     // --- Attribut ---
 
@@ -15,7 +15,6 @@ export default class Attack extends Command {
     // --- Constructeur ---
 
   constructor(nest: MonsterNest) {
-    super();
     this.#nest = nest;
   }
 
@@ -49,7 +48,7 @@ export default class Attack extends Command {
 
     const embed = new MessageEmbed()
       .addField(this.description, content);
-      await message.channel.send(embed);
+    await message.channel.send(embed);
   }
 
 }

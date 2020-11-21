@@ -2,7 +2,7 @@ import { Message, MessageEmbed } from "discord.js";
 import Command from "../command";
 import Context from "../context";
 
-export default class Help extends Command {
+export default class Help implements Command {
 
     // --- Attribut ---
 
@@ -12,7 +12,6 @@ export default class Help extends Command {
     // --- Constructeur ---
 
   constructor(commands: Map<string, Command>) {
-    super();
     this.#commands = commands;
   }
 

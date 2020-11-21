@@ -5,7 +5,7 @@ import Context from "../context";
 /**
  * Une commande qui gère les erreurs.
  */
-export default class Unrecognized extends Command {
+export default class Unrecognized implements Command {
 
     // --- Accesseurs ---
 

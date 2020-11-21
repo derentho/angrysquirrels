@@ -4,7 +4,7 @@ import Command from "../utils/command";
 /**
  * Une commande affichant le lore du jeu.
  */
-export default class Lore extends Command {
+export default class Lore implements Command {
 
     // --- Accesseurs ---
 
