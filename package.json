@@ -8,7 +8,7 @@
     "compile": "tsc",
     "watch": "tsc --watch",
     "lint": "eslint . --ext .ts",
-    "full-install": "npm install && npm run compile"
+    "postinstall": "npm run compile"
   },
   "repository": {
     "type": "git",

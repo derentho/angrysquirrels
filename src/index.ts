@@ -1,4 +1,4 @@
-import { Client } from "discord.js";
+import { Client, MessageEmbed } from "discord.js";
 import Attack from "./commands/attack";
 import Lore from "./commands/lore";
 import MonsterNest from "./models/monster_nest";
@@ -25,13 +25,15 @@ setInterval( () => {
   if (channel?.isText()) {
     const monster = nest.pop();
     if (monster) {
-      void channel.send(`**${monster.toString()}** est apparu !`);
+      const embed = new MessageEmbed()
+        .addField("Apparition !", `**${monster.toString()}** est apparu !`);
+      void channel.send(embed);
     }
   }
 }, generateDelay());
 
 function generateDelay(): number {
   const min = 5 * 60 * 1000;
-  const max = 30 * 60 * 1000;
+  const max = 20 * 60 * 1000;
   return Math.floor(Math.random() * (max - min)) + min;
 }

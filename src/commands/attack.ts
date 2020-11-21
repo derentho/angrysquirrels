@@ -41,7 +41,7 @@ export default class Attack implements Command {
 
     let content = "";
     if (killed) {
-      content += `${message.author.username} a tué ${killed.toString()}`;
+      content += `${message.author.username} a tué ${killed.toString() !}`;
     } else {
       content += "Il n'y a pas de monstre à attaquer...";
     }
