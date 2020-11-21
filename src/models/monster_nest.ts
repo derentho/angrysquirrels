@@ -8,23 +8,29 @@ export default class MonsterNest {
     // --- Attribut ---
 
   #monsters: Array<Monster>;
+  readonly limit: number;
 
 
     // --- Constructeur ---
 
-  constructor() {
+  constructor(limit: number) {
     this.#monsters = new Array<Monster>();
+    this.limit = limit;
   }
 
 
     // --- Méthodes ---
 
   /**
-   * Fait apparaitre un monstre dans le nid.
+   * Fait apparaitre un monstre dans le nid, s'il y a de la place.
    * 
-   * @returns Le monstre apparut.
+   * @returns Un monstre, s'il est apparut.
    */
-  pop(): Monster {
+  pop(): Monster | undefined {
+    if (this.#monsters.length === this.limit) {
+      return undefined;
+    }
+
     const monster = Monster.generate();
     this.#monsters.unshift(monster);
     return monster;

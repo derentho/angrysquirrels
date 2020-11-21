@@ -6,7 +6,7 @@ import CommandRouter from "./utils/command_router";
 import Context from "./utils/context";
 
 const context = Context.getInstance();
-const nest = new MonsterNest();
+const nest = new MonsterNest(10);
 
 const client = new Client();
 client.once("ready", () => {
@@ -23,6 +23,15 @@ void client.login(context.token);
 setInterval( () => {
   const channel = client.channels.cache.get("769948948655636550");
   if (channel?.isText()) {
-    void channel.send(`**${nest.pop().toString()}** est apparu !`);
+    const monster = nest.pop();
+    if (monster) {
+      void channel.send(`**${monster.toString()}** est apparu !`);
+    }
   }
-}, 30000);
+}, generateDelay());
+
+function generateDelay(): number {
+  const min = 5 * 60 * 1000;
+  const max = 30 * 60 * 1000;
+  return Math.floor(Math.random() * (max - min)) + min;
+}
